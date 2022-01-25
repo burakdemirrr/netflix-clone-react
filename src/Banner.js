@@ -5,7 +5,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { logout, useAuth } from './firebase';
 import {  useNavigate } from 'react-router';
-import { Swiper, SwiperSlide } from 'swiper/react';
 function Banner() {
     const [movies,setMovies]=useState([]);
     const navigate = useNavigate();
@@ -45,11 +44,6 @@ function Banner() {
 
         
         <div className="main">
-          
-       
-
-
-
         <div className="banner"
         style={
             {backgroundSize:"cover",

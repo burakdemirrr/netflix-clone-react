@@ -13,10 +13,15 @@
 .row_poster{
     widtH:100%;
     object-fit:contain;
+   
     max-height: 125px;
-    transition: transform 450ms;
+    transition: transform 350ms;
     margin-right:10px;
     
+}
+.movieRow--list{
+    display: flex;
+    transition:all ease 0.5s;
 }
 .row_poster:hover{
     transform:scale(1.16);
@@ -55,3 +60,31 @@
 .row .switchRight:hover,.row .switchLeft:hover{
     transform:scale(1.7);
 }
+.movieRow-left,
+ .movieRow-right {
+    position:absolute;   
+    width: 40px;
+    height: 225px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor:pointer;
+    opacity:0.4;
+    transition : all ease 0.2s;
+}
+
+ .movieRow-left{
+     left: 35px;
+     top:9px;
+ }
+
+ .movieRow-right{
+    right:35px;
+    top:9px;
+}
+.movieRow-left:hover,
+ .movieRow-right:hover{
+     opacity:1;
+ }
